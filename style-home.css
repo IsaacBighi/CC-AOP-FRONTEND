@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #161819;
+    font-family: "Rubik", cursive;
+}
+
+/*Header*/
+
+header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header nav {
+    background-color: rgb(30, 31, 31);
+    border-bottom:1px solid #73CFD9;
+    color: white;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 20px;
+}
+
+nav ul li a  {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li:hover {
+    cursor: pointer;
+    background-color: #64b4bd;
+    color: white;
+    transition: .2s;
+}
+
+header .card {
+    margin: auto auto;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 4px 3px 11px 8px #27708C;
+    padding: 5px;
+    max-width: 80%;
+    background: rgb(30, 31, 31);
+}
+
+header .card .card-title {
+    margin: 15px;
+    text-align: center;
+}
+
+header .card .card-title .highlight {
+    color: #73CFD9;
+    border-bottom: 2px solid #73CFD9;
+}
+
+header .card .card-text {
+    padding: 15px;
+    font-size: 20px;
+}
+
+/*div*/
+
+section {
+    max-width: 80%;
+    margin: 30px auto;
+    display: flex;
+    gap: 20px;
+}
+
+div.card-news {
+    background-color: rgb(30, 31, 31);
+    color: white;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    max-width: 80%;
+}
+
+div.card-news .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+div.card-news .card-body img {
+    margin: 0 auto;
+    width: 100%;
+    max-height: 550px;
+}
+
+div.card-news .card-body .card-news-title {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+div.card-news .card-body .card-news-text {
+    padding: 18px;
+}
+
+div.card-news .card-body a.btn {
+    color: white;
+    text-decoration: none;
+    border: 1px solid #73CFD9;
+    text-align: center;
+    width: 100px;
+    padding: 10px 0;
+    margin: 10px auto;
+    border-radius: 15px;
+}
+
+div.card-news .card-body a.btn:hover {
+    background: #73CFD9;
+    transition: 0.4s;
+}
+
+footer {
+    background-color:rgb(30, 31, 31); 
+    margin-top: 50px;
+    color: white;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
